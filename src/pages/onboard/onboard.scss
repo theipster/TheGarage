@@ -1,0 +1,104 @@
+page-onboard {
+    .flex-container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #2B2A57;
+    }
+
+    .header {
+        order: 0;
+        color: white;
+
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+    }
+
+    .body {
+        order: 1;
+        align-self: stretch;
+        margin: 25px;
+        height: 182px;
+        position: relative;
+    }
+
+    div#garage-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @keyframes garage {
+        from {
+            opacity: 0.3;
+            width: 192px;
+            height: 192px;
+        }
+        to {
+            opacity: 0.2;
+            width: 182px;
+            height: 182px;
+        }
+    }
+
+    img#garage {
+        position: absolute;
+        bottom: 0;
+        animation-name: garage;
+        animation-delay: 1s;
+        animation-duration: 1.8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes contents {
+        from {
+            height: 115px;
+            width: 115px;
+        }
+        to {
+            height: 128px;
+            width: 128px;
+        }
+    }
+
+    div#garage-contents {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    div#garage-contents img {
+        filter: drop-shadow(0 0 5px #222);
+        margin: 0 5px;
+        animation-name: contents;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    div#garage-contents img#car {
+        margin-bottom: -22px;
+    }
+
+    div#garage-contents img#bike {
+        margin-bottom: 0px;
+    }
+    .footer {
+        order: 2;
+    }
+}
