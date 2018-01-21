@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { OnboardPage } from '../pages/onboard/onboard';
 import { PhotoPage } from '../pages/photo/photo';
 import { RegisterPage } from '../pages/register/register';
+import { VehiclesPage } from '../pages/vehicles/vehicles';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     OnboardPage,
     PhotoPage,
-    RegisterPage
+    RegisterPage,
+    VehiclesPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     OnboardPage,
     PhotoPage,
-    RegisterPage
+    RegisterPage,
+    VehiclesPage
   ],
   providers: [
     StatusBar,

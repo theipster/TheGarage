@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { VehiclesPage } from '../vehicles/vehicles';
 
 @Component({
   selector: 'page-photo',
@@ -10,7 +11,7 @@ export class PhotoPage {
   }
 
   buttonSkipClick(event) {
-  
+    this.navCtrl.setRoot(VehiclesPage);
   }
 
   buttonUploadClick(event) {
