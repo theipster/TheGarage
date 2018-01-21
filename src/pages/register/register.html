@@ -1,0 +1,21 @@
+<div class="flex-container">
+    <div class="header">
+        <img id="car-key" src="assets/imgs/car-key.png" />
+        <img id="stars" src="assets/imgs/stars.png" />
+    </div>
+    <div class="body" padding>
+        <ion-list>
+            <ion-item no-padding>
+                <ion-label color="primary" stacked>Manufacturer</ion-label>
+                <ion-input placeholder="e.g. Mazda"></ion-input>
+            </ion-item>
+            <ion-item no-padding>
+                <ion-label color="primary" stacked>Model</ion-label>
+                <ion-input placeholder="e.g. MX-5"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="footer">
+        <button ion-button (click)="buttonRegisterClick($event)">Add</button>
+    </div>
+</div>

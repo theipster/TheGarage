@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { RegisterPage } from '../register/register';
+import { PhotoPage } from '../photo/photo';
 
 @Component({
-  selector: 'page-onboard',
-  templateUrl: 'onboard.html'
+  selector: 'page-register',
+  templateUrl: 'register.html'
 })
-export class OnboardPage {
+export class RegisterPage {
   constructor(public navCtrl: NavController) {
   }
 
-  buttonClick(event) {
+  buttonRegisterClick(event) {
     this.navCtrl.push(
-        RegisterPage
+        PhotoPage
     );
   }
 }

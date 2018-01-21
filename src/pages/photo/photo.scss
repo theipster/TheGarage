@@ -1,0 +1,21 @@
+page-photo {
+    .flex-container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        order: 0;
+    }
+
+    .body {
+        order: 1;
+    }
+
+    .footer {
+        order: 2;
+    }
+}
