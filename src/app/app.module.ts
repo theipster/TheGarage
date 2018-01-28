@@ -10,7 +10,6 @@ import { PhotoPage } from '../pages/photo/photo';
 import { RegisterPage } from '../pages/register/register';
 import { VehiclesPage } from '../pages/vehicles/vehicles';
 
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
@@ -38,7 +37,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     VehiclesPage
   ],
   providers: [
-    StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
