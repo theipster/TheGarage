@@ -10,26 +10,26 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
+    <ion-card #mx5card>
         <ion-card-content style="background-image: url('assets/imgs/vehicles/mazda_mx5_3.jpg')">
             <ion-card-title no-padding no-margin>Mazda MX5</ion-card-title>
         </ion-card-content>
         <ion-row>
             <ion-col no-padding no-margin>
-                <button ion-button clear icon-only full>
+                <button ion-button clear icon-only full (click)="buttonNewReading_click($event, mx5card)">
                     <ion-icon name="speedometer"></ion-icon>
                     <div>New odometer reading</div>
                 </button>
             </ion-col>
         </ion-row>
     </ion-card>
-    <ion-card>
+    <ion-card #s2000card>
         <ion-card-content style="background-image: url('assets/imgs/vehicles/honda_s2000_3.jpg')">
             <ion-card-title no-padding no-margin>Honda S2000</ion-card-title>
         </ion-card-content>
         <ion-row>
             <ion-col no-padding no-margin>
-                <button ion-button clear icon-only full>
+                <button ion-button clear icon-only full (click)="buttonNewReading_click($event, s2000card)">
                     <ion-icon name="speedometer"></ion-icon>
                     <div>New odometer reading</div>
                 </button>
