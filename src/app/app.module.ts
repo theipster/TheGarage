@@ -11,6 +11,7 @@ import { RegisterPage } from '../pages/register/register';
 import { VehiclesPage } from '../pages/vehicles/vehicles';
 
 import { Camera } from '@ionic-native/camera';
+import { File } from '@ionic-native/file';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
@@ -39,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     Camera,
+    File,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
