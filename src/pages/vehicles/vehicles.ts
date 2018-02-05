@@ -50,6 +50,7 @@ export class VehiclesPage {
   takePhoto (odoDir: string) {
     const options: CameraOptions = {};
     options.correctOrientation = true;
+    options.targetWidth = 1000;  // Let's save space!
     this.camera.getPicture(options)
         .then(
             imageFile => this.saveImage(imageFile, odoDir),
